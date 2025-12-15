@@ -1,4 +1,4 @@
-# Goblin Mines – Mobile MVP (1 неделя)
+# Kings-vs.-Goblins – Mobile MVP (1 неделя)
 
 ## Core Gameplay
 - [x] Вертикальная ориентация для мобильных устройств (Android)
