@@ -8,6 +8,11 @@ public class CameraBehavior : MonoBehaviour
     public float smoothSpeed = 0.125f; // Скорость сглаживания
     public Vector3 offset;       // Смещение (обычно по Z: -10)
 
+    void Start()
+    {
+        Debug.Log($"Screen: {Screen.width}x{Screen.height}");
+    }
+
     void LateUpdate()
     {
         // Желаемая позиция камеры

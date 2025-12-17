@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 10;
     private Vector2 moveVector;
     private SpriteRenderer sr;
+    [SerializeField] private Joystick _joystick;
 
     void Awake()
     {
@@ -17,8 +18,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {        
-        moveVector.x = Input.GetAxis("Horizontal");
-        moveVector.y = Input.GetAxis("Vertical");
+        moveVector.x = _joystick.Horizontal;
+        moveVector.y = _joystick.Vertical;        
         if (moveVector.x > 0)
         {
             sr.flipX = true;
